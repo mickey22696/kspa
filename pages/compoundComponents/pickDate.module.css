@@ -1,0 +1,255 @@
+.picker {
+    margin-top: 30px;
+}
+
+.logo {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.flex {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex h1 {
+    font: normal normal normal 26px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+}
+
+.flex h4 {
+    font: normal normal normal 16px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+}
+
+.row {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin-top: 25px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #ffffff62;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 2% 15%;
+    width: 100%;
+    font-size: 16px;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topBar > div {
+    cursor: pointer;
+}
+.container {
+    padding: 10%;
+    text-align: center;
+}
+
+.mirror {
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+
+.active {
+    font: normal normal normal 18px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    background: #343434 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 2% 15%;
+    margin: 1.5%;
+}
+
+.timebtn {
+    font: normal normal normal 18px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    cursor: pointer;
+    background: #000000 0% 0% no-repeat padding-box;
+    color: #777777;
+    border: none;
+    border-radius: 5px;
+    padding: 2% 15%;
+    margin: 1%;
+}
+
+.choosepod {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.choosetod {
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* For Firefox */
+    min-height: 0;
+    max-height: 35vh;
+}
+.timePickerAm {
+    width: 25%;
+    margin-right: 10px;
+}
+.timePickerHourMin {
+    display: flex;
+    width: 75%;
+    /* justify-content: flex-end; */
+}
+.hourSelector {
+    width: 50%;
+    margin-right: 10px;
+}
+.TimePickerOver {
+    margin-top: 25px;
+    background: none;
+    cursor: pointer;
+    color: #ffffff;
+    /* padding: 2% 15%; */
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+@media (max-height: 760px) {
+    .choosetod {
+        margin-top: 15px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+        grid-template-rows: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        overflow-x: hidden;
+        /* For Firefox */
+        min-height: 0;
+        max-height: 35vh;
+    }
+    .active {
+        font: normal normal normal 18px 'Sharp Sans No1 Book', 'Noto Naskh Arabic',
+            sans-serif;
+        background: #343434 0% 0% no-repeat padding-box;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        /* padding: 2% 15%; */
+        margin: 1.5%;
+        padding: 3% 2%;
+    }
+
+    .timebtn {
+        font: normal normal normal 18px 'Sharp Sans No1 Book', 'Noto Naskh Arabic',
+            sans-serif;
+        cursor: pointer;
+        background: #000000 0% 0% no-repeat padding-box;
+        color: #777777;
+        border: none;
+        border-radius: 5px;
+        /* padding: 2% 15%; */
+        margin: 1.5%;
+        padding: 3% 2%;
+    }
+}
+
+.choosetod::-webkit-scrollbar {
+    width: 10px;
+}
+
+.choosetod::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+.choosetod::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 4px;
+}
+
+.timechoicebtn {
+    background: #000000 0% 0% no-repeat padding-box;
+    cursor: pointer;
+    color: #777777;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+    margin: 1%;
+    height: max-content;
+}
+
+.activetime {
+    cursor: default;
+    background: #343434 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+    margin: 1%;
+    height: max-content;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    border: 2px solid #66666662;
+    color: #66666662;
+}
+/* .TimePickerOver.MuiSvgIcon-root {
+    color: black !important;
+}
+.TimePickerOver svg {
+    color: black !important;
+}
+
+.TimePickerOver .Mui-focused.MuiOutlinedInput-notchedOutline {
+    border-color: black !important;
+}
+
+.TimePickerOver .MuiTextField-root {
+    background-color: white;
+    border-radius: 4px;
+    -moz-user-focus: ignore;
+} */
+
+/* .TimePickerOver2.MuiSvgIcon-root {
+    color: black !important;
+}
+.TimePickerOver2 svg {
+    color: black !important;
+}
+
+.TimePickerOver2 .Mui-focused.MuiOutlinedInput-notchedOutline {
+    border-color: black !important;
+}
+
+.TimePickerOver2 .MuiTextField-root {
+    background-color: white;
+    border-radius: 4px;
+    -moz-user-focus: ignore;
+} */
+.TimePickerOver2 {
+    background-color: black !important;
+}
+
+.TimePickerOver2 .Mui-selected {
+    background-color: none !important;
+}

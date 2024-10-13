@@ -1,0 +1,48 @@
+/* All Navbar Related Classes */
+.navbar {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    background: #ffffff15;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: white;
+    height: var(--navbar-height);
+    height: 100%;
+    padding: 10px;
+    z-index: 10;
+}
+
+.list {
+    display: inline-flex;
+    align-items: center;
+    margin: auto 0 auto 0;
+    width: 100%;
+    text-align: center;
+}
+
+.list li {
+    cursor: pointer;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+}
+
+.listright {
+    margin-left: auto;
+}
+
+.main_container {
+    max-width: 1536px;
+    width: 95vw;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .main_container {
+        width: 80vw;
+    }
+}

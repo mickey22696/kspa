@@ -1,0 +1,210 @@
+.prod_col {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.prod_col > * {
+    margin-top: 2.5%;
+}
+
+.prod_col h1 {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+}
+
+.prod_dur {
+    display: flex;
+    width: 100%;
+}
+
+.prod_dur label {
+    color: white;
+    width: max-content;
+    padding: 1.5% 1.5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #ffffff15;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.prod_dur input {
+    display: none;
+}
+
+.prod_dur,
+.btnactive {
+    border-color: #d7ad33 !important;
+}
+
+.prod_price {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+}
+
+.prod_price span {
+    color: #d7ad33;
+}
+
+.prod_btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.prod_btn button {
+    cursor: pointer;
+    color: white;
+    padding: 1.5% 7.5%;
+    width: 100%;
+    margin: 2.5% auto;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #ffffff15;
+    font-size: 16px;
+}
+
+.prod_btn button:disabled {
+    cursor: not-allowed;
+    border: 2px solid #66666662;
+    color: #66666662;
+}
+
+.prod_desc {
+    padding-right: 7%;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.cardBig_name {
+    font: normal normal 300 23px 'Sharp Sans No1 Bold', 'Noto Naskh Arabic', sans-serif;
+    /* letter-spacing: 1px; */
+    width: 90%;
+    margin: auto;
+}
+.cardBig_name_ar {
+    font: normal normal bold 23px 'Noto Naskh Arabic', sans-serif;
+    /* letter-spacing: 1px; */
+    width: 90%;
+}
+.cardBig {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0% 0%
+        no-repeat padding-box;
+    padding: 3% 0 3% 0;
+    margin: 10vh 10px 10vh 10px;
+    border-radius: 5px;
+    border: thin solid rgba(255, 255, 255, 0.04);
+    cursor: default;
+}
+
+.cardBig_hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.herodiv_img {
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+    overflow: visible;
+}
+
+.herodiv_img > div {
+    overflow: visible !important;
+    width: 100%;
+}
+
+.herodiv_img img {
+    max-height: max(20vh, 150px) !important;
+    width: 100%;
+    border-radius: 5px;
+    top: -60% !important;
+}
+.cardBig_col_alt {
+    display: none;
+    margin: auto auto auto 2rem;
+}
+@media (min-width: 768px) {
+    .prod_col {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    .prod_btn {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .prod_btn button {
+        color: white;
+        padding: 1.5% 2.5%;
+        margin-right: 5%;
+        background: transparent;
+        border-radius: 5px;
+        border: 2px solid #ffffff50;
+        font-size: 14px;
+    }
+
+    .cardBig {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .cardBig_name {
+        /* margin: 5% auto; */
+        width: 100%;
+        text-align: left;
+        font: normal normal 300 32px 'Sharp Sans No1 Bold', 'Noto Naskh Arabic',
+            sans-serif;
+        /* letter-spacing: 1px; */
+    }
+    .cardBig_name_ar {
+        /* margin: 5% auto; */
+        width: 100%;
+        text-align: left;
+        font: normal normal bold 32px 'Noto Naskh Arabic', sans-serif;
+        /* letter-spacing: 1px; */
+    }
+    .cardBig_hero {
+        display: flex;
+        width: 25%;
+        max-height: 350px;
+    }
+
+    .herodiv_img {
+        width: 100%;
+    }
+
+    .herodiv_img img {
+        max-height: 350px !important;
+        max-width: 220px !important;
+        height: min(30vh, 30vw) !important;
+        top: 0 !important;
+        left: -30% !important;
+    }
+
+    .cardBig_col_alt {
+        width: 100%;
+        display: block;
+    }
+    .cardBig_col {
+        display: none;
+        margin-bottom: 10%;
+        margin-top: 0;
+    }
+}

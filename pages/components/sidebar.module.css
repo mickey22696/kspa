@@ -1,0 +1,38 @@
+.sidebarRight {
+    right: 0;
+}
+.sidebarLeft {
+    left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: #141414ea 0% 0% no-repeat padding-box;
+    color: #fff;
+    width: 0;
+    /* overflow: hidden; */
+    height: 100vh;
+    z-index: 11;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.sidebar2 {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: #141414ea 0% 0% no-repeat padding-box;
+    color: #fff;
+    width: 0;
+    /* overflow: hidden; */
+    height: 100vh;
+    z-index: 11;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.children {
+    height: 100%;
+}

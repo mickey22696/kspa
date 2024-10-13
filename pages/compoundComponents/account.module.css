@@ -1,0 +1,186 @@
+.flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.addpadd {
+    height: 20px;
+}
+
+.details {
+    margin-top: 15px;
+}
+
+.details h4 {
+    font: normal normal normal 21px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    text-align: start;
+    margin-top: 15px;
+}
+
+.flex h1 {
+    font: normal normal normal 24px 'Sharp Sans No1 Bold', 'Noto Naskh Arabic', sans-serif;
+    text-align: start;
+    margin-top: 30px;
+}
+
+.flex p {
+    text-align: left;
+    margin-top: 15px;
+    font: normal normal normal 14px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    text-decoration: underline;
+}
+
+.smaller {
+    max-height: 40vh !important;
+    padding-bottom: 2.5%;
+    padding-top: 3%;
+}
+.flexwithscroll {
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.flexwithscroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+@media only screen and (max-height: 778px) {
+    .smaller {
+        max-height: 34vh !important;
+        padding-bottom: 2.5%;
+        padding-top: 3%;
+    }
+}
+.flexwithscroll::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+.flexwithscroll::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 4px;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding: 10%;
+    text-align: center;
+}
+
+.row {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    position: relative;
+
+    width: 48%;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    font: normal normal normal 16px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    color: #777777;
+    padding: 2% 5%;
+    font-size: 16px;
+}
+
+.btnhas {
+    position: relative;
+    width: 48%;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    font: normal normal normal 16px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    color: #d7ad33;
+    padding: 2% 5%;
+    font-size: 16px;
+}
+
+.btnNotific {
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    left: 98%;
+    top: -30%;
+    color: #d7ad33;
+}
+
+.activehas {
+    position: relative;
+    width: 50%;
+    background: #343434 0% 0% no-repeat padding-box;
+    color: #d7ad33;
+    border-radius: 5px;
+    border: none;
+    font: normal normal normal 16px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    font-size: 16px;
+    padding: 2% 5%;
+}
+
+.active {
+    position: relative;
+
+    width: 48%;
+    background: #343434 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font: normal normal normal 16px;
+    font-size: 16px;
+    padding: 2% 5%;
+}
+
+.order {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    font: normal normal normal 18px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+    margin-top: 20px;
+}
+
+.col1 {
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 30%;
+    border-top: 2px solid #ffffff8c;
+    border-left: 2px solid #ffffff8c;
+    border-bottom: 2px solid #ffffff8c;
+    border-radius: 5px 0 0 5px;
+    padding: 3% 2.5%;
+}
+
+.col1 p {
+    text-decoration: none;
+}
+
+.col2 {
+    cursor: default;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 70%;
+    border: 2px solid #ffffff8c;
+    border-radius: 0 5px 5px 0;
+    padding: 3% 2.5%;
+}
+
+.col2 p {
+    text-decoration: none;
+}
