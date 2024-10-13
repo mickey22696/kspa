@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+/* @import url('http://db.onlinewebfonts.com/c/6a1891db0152c7835cc61d5e95578b29?family=Sharp+Sans+No1+Book'); */
+/* @import url('https://db.onlinewebfonts.com/c/154ebfcef3ca74b92a56a5826ee85d74?family=Sharp+Sans+No1+Bold'); */
+:root {
+    /*We define all the variables here*/
+
+    /*
+        Navbar Height is used to derive the height of the rest of the content
+        and the navbar too.
+    */
+    --navbar-height: 8.5vh;
+    --scrollbarBG: #68696940;
+    --thumbBG: #141414;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-disabled {
+    /* background-color: rgb(46, 41, 41) !important; */
+    color: rgb(97, 97, 97) !important;
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 4px;
+}
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+    color: white;
+    overflow: overlay;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1 Bold';
+    src: url('../public/fonts/SharpSansNo1Bold/154ebfcef3ca74b92a56a5826ee85d74.eot'); /* IE9*/
+    src: url('../public/fonts/SharpSansNo1Bold/154ebfcef3ca74b92a56a5826ee85d74.eot?#iefix')
+            format('embedded-opentype'),
+        /* IE6-IE8 */
+            url('../public/fonts/SharpSansNo1Bold/154ebfcef3ca74b92a56a5826ee85d74.woff2')
+            format('woff2'),
+        /* chrome、firefox */
+            url('../public/fonts/SharpSansNo1Bold/154ebfcef3ca74b92a56a5826ee85d74.woff')
+            format('woff'),
+        /* chrome、firefox */
+            url('../public/fonts/SharpSansNo1Bold/154ebfcef3ca74b92a56a5826ee85d74.ttf')
+            format('truetype'),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../public/fonts/SharpSansNo1Bold/154ebfcef3ca74b92a56a5826ee85d74.svg#SharpSansNo1-Bold')
+            format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1 Book';
+    src: url('../public/fonts/SharpSansNo1-Book/6a1891db0152c7835cc61d5e95578b29.eot'); /* IE9*/
+    src: url('../public/fonts/SharpSansNo1-Book/6a1891db0152c7835cc61d5e95578b29.eot?#iefix')
+            format('embedded-opentype'),
+        /* IE6-IE8 */
+            url('../public/fonts/SharpSansNo1-Book/6a1891db0152c7835cc61d5e95578b29.woff2')
+            format('woff2'),
+        /* chrome、firefox */
+            url('../public/fonts/SharpSansNo1-Book/6a1891db0152c7835cc61d5e95578b29.woff')
+            format('woff'),
+        /* chrome、firefox */
+            url('../public/fonts/SharpSansNo1-Book/6a1891db0152c7835cc61d5e95578b29.ttf')
+            format('truetype'),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../public/fonts/SharpSansNo1-Book/6a1891db0152c7835cc61d5e95578b29.svg#SharpSansNo1-Book')
+            format('svg'); /* iOS 4.1- */
+}
+
+/* arabic */
+@font-face {
+    font-family: 'Noto Naskh Arabic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.eot');
+    src: url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.eot?#iefix')
+            format('embedded-opentype'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.woff2')
+            format('woff2'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.woff') format('woff'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf')
+            format('truetype'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.svg#NotoNaskhArabic-Regular')
+            format('svg');
+
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF,
+        U+FE80-FEFC, U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+        U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+        U+FFFD;
+}
+
+/* @font-face {
+    font-family: 'Noto Naskh Arabic, serif';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Medium.eot');
+    src: url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Medium.eot?#iefix')
+            format('embedded-opentype'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Medium.woff2')
+            format('woff2'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Medium.woff') format('woff'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Medium.ttf')
+            format('truetype'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Medium.svg#NotoNaskhArabic-Medium')
+            format('svg');
+
+    src: url(https://fonts.gstatic.com/s/notonaskharabic/v16/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Urqcy.woff2)
+        format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF,
+        U+FE80-FEFC, U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+        U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+        U+FFFD;
+}
+@font-face {
+    font-family: 'Noto Naskh Arabic, serif';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Bold.eot');
+    src: url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Bold.woff2') format('woff2'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Bold.woff') format('woff'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Bold.ttf') format('truetype'),
+        url('../public/fonts/NotoNaskhArabic/NotoNaskhArabic-Bold.svg#NotoNaskhArabic-Bold')
+            format('svg');
+
+    src: url(https://fonts.gstatic.com/s/notonaskharabic/v16/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUrqcy.woff2)
+        format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF,
+        U+FE80-FEFC, U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+        U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+        U+FFFD;
+} */
+
+/* Sharp Sans No1 Bold */
+body {
+    /* font-family: 'Sharp Sans No1 Book' !important;
+     */
+    font-family: 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif !important;
+
+    /* 'Noto Naskh Arabic', sans-serif; */
+    background-image: url(../public/images/background.jpg);
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+/* Layout Classes */
+#mainContainer {
+    max-width: 1536px;
+    width: 95vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.MuiTextField-root {
+    background-color: white;
+    border-radius: 4px;
+    -moz-user-focus: ignore;
+}
+
+.MuiDialog-container .MuiButtonBase-root {
+    color: #1976d2 !important;
+}
+.MuiDialog-container .MuiTypography-root {
+    color: black !important;
+}
+/* .PrivatePickersToolbar-root .MuiTypography-root {
+    color: rgba(255, 255, 255, 0.6) !important;
+} */
+/* .PrivatePickersToolbar-root .Mui-selected {
+    color: black !important;
+} */
+
+/* .PrivatePickersToolbar-root {
+    background-color: black;
+}
+.PrivatePickersToolbar-root .MuiSvgIcon-root {
+    color: rgb(255, 255, 255) !important;
+} */
+
+/* .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: black !important;
+} */
+.hero {
+    height: calc(110vh - var(--navbar-height));
+    margin-top: auto;
+}
+
+@media only screen and (min-height: 780px) {
+    .hero {
+        height: calc(90vh - var(--navbar-height));
+        margin-top: auto;
+    }
+}
+/* Layout Classes END */
+/* Override for material UI badge color, might have to do this in a diff way later */
+.MuiBadge-colorPrimary {
+    background: rgba(68, 68, 68, 0.7) 0% 0% no-repeat padding-box !important;
+    font-size: 10px !important;
+}
+
+.gosell-gateway-msg-wrapper {
+    /* To Center it vertically */
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed !important;
+}
+
+/* All Card Related Classes */
+.herorow {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.herodiv {
+    display: flex;
+    background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0% 0%
+        no-repeat padding-box;
+    max-width: fit-content;
+    padding: 3% 0% 3% 0%;
+    margin: auto 20px auto 20px;
+    color: white;
+    border: thin solid rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.herodiv_img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: visible;
+}
+
+.herodiv_img > div {
+    overflow: visible !important;
+}
+
+.herodiv_img img {
+    margin-left: 5% !important;
+    margin-right: 10% !important;
+    top: -60% !important;
+}
+
+@media (max-width: 500px) {
+    .herodiv_img img {
+        margin-left: 5% !important;
+        margin-right: 10% !important;
+        min-width: 150px !important;
+        min-height: 150px !important;
+        /* top: -60% !important; */
+    }
+    .herodiv {
+        display: flex;
+        background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0%
+            0% no-repeat padding-box;
+        max-width: fit-content;
+        padding: 3% 0% 3% 0%;
+        margin: 50px 20px 20px 20px !important;
+        color: white;
+        border: thin solid rgba(255, 255, 255, 0.08);
+        border-radius: 3px;
+        cursor: pointer;
+        min-width: 90%;
+    }
+    .herodiv_img > div {
+        overflow: visible !important;
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 1020px) {
+    .herodiv {
+        display: flex;
+        background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0%
+            0% no-repeat padding-box;
+        max-width: fit-content;
+        padding: 3% 0% 3% 0%;
+        margin: auto 20px auto 20px;
+        color: white;
+        border: thin solid rgba(255, 255, 255, 0.08);
+        border-radius: 3px;
+        cursor: pointer;
+        min-width: 90%;
+    }
+}
+@media (max-width: 300px) {
+    .herodiv_img img {
+        margin-left: 5% !important;
+        margin-right: 10% !important;
+        min-width: 115px !important;
+        min-height: 115px !important;
+        /* top: -60% !important; */
+    }
+}
+
+.herodiv_col {
+    width: auto;
+    margin: auto auto auto 2rem;
+    padding-right: 10px;
+}
+
+.hero_name {
+    margin: 5% 0 5% 0;
+    font: normal normal 200 21px 'Sharp Sans No1 Bold', 'Noto Naskh Arabic', sans-serif;
+    letter-spacing: 1px;
+}
+.hero_name_ar {
+    margin: 5% 0 5% 0;
+    font: normal normal bold 21px 'Noto Naskh Arabic', sans-serif;
+    /* letter-spacing: 1px; */
+}
+
+.hero_desc {
+    margin: 5% 0 5% 0;
+    font: normal normal 300 14px 'Sharp Sans No1 Book', 'Noto Naskh Arabic', sans-serif;
+}
+
+.herodiv_col img {
+    margin: 15% 0 15% 0;
+}
+.PrivatePickersSlideTransition-root {
+    min-height: 200px;
+}
+.MuiCalendarPicker-root {
+    width: 100% !important;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.MuiCalendarPicker-viewTransitionContainer {
+    background: #343434 0% 0% no-repeat padding-box;
+    color: #ffffff;
+}
+
+.MuiIconButton-root,
+.MuiTypography-root {
+    color: #ffffff !important;
+}
+
+.MuiButtonBase-root {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.MuiCalendarPicker-root .Mui-selected {
+    background-color: #ffffff !important;
+    border-radius: 5px !important;
+    color: #131212 !important;
+}
+
+.MuiPickersDay-root:not(.Mui-selected) {
+    border-color: #ffffff !important;
+    border-radius: 5px !important;
+}
+
+.PrivatePickersToolbar-root .Mui-selected {
+    background-color: rgb(0, 0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.PrivatePickersToolbar-root + div {
+    background: #343434 0% 0% no-repeat padding-box;
+}
+.PrivatePickersToolbar-root + div span:not(.Mui-selected):not(.Mui-disabled) {
+    color: white !important;
+}
+.PrivatePickersToolbar-root + div .Mui-disabled {
+    color: rgb(121, 121, 121) !important;
+}
+.PrivatePickersToolbar-root + div > div > div > div:nth-child(2) {
+    background-color: #d7ad33 !important;
+}
+.PrivatePickersToolbar-root + div > div > div > div:nth-child(3) {
+    background-color: #d7ad33 !important;
+}
+.PrivatePickersToolbar-root + div > div > div > div:nth-child(3) > div {
+    background-color: #d7ad33 !important;
+    border-color: #d7ad33 !important;
+}
+/* All Card Related Classes END */
+
+/* Media Queries */
+@media only screen and (min-width: 1024px) {
+    #mainContainer {
+        width: 80vw;
+        height: 100%;
+    }
+
+    .list {
+        margin: auto 12.5vw auto 12.5vw;
+        width: 75vw;
+    }
+
+    .herorow {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 90%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .herodiv {
+        flex-direction: column;
+        flex: 1 0 auto;
+        width: 16%;
+        height: 80%;
+        max-height: none;
+        padding: 3% 0 3% 0;
+        margin: auto 5% auto 5%;
+        background: transparent linear-gradient(155deg, #ffffff31 0%, #ffffff00 100%) 0%
+            0% no-repeat padding-box;
+        border: 3px solid #ffffff1a;
+        border-radius: 5px;
+        max-width: fit-content;
+    }
+
+    .herodiv_img {
+        width: min(20vw, 40vh, 400px);
+        height: min(20vw, 40vh, 400px);
+    }
+
+    .herodiv_col .hero_name,
+    .herodiv_col .hero_desc,
+    .herodiv_col img {
+        margin: 20px auto 20px auto;
+    }
+
+    .herodiv_img img {
+        border-radius: 5px !important;
+        top: 0 !important;
+        left: -30% !important;
+    }
+}
+
+.MuiSelect-select {
+    color: white !important;
+    border-color: white !important;
+}
+
+.MuiSelect-icon {
+    color: white !important;
+}
+
+fieldset {
+    border-color: white !important;
+}
+
+fieldset .Mui-focused {
+    border-color: white !important;
+}
+.MuiModal-root li {
+    color: black !important;
+}
+.MuiOutlinedInput-root .MuiInputBase-root .MuiInputBase-colorPrimary .Mui-focused {
+    border-color: white !important;
+}
+.MuiSelect-root .Mui-focused .MuiOutlinedInput-notchedOutlin {
+    border-color: white !important;
+}
